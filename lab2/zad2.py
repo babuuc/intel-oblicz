@@ -39,7 +39,6 @@ dane.to_csv(plik2, index=False)
 tablica1 = []
 tablica2 = []
 
-# reczne grupowanie bo amator nie zna groupby
 klasy = list(dane[cel].unique())
 klasy.sort()
 

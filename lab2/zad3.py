@@ -46,7 +46,7 @@ def funkcja_knn(x, k):
         najmniejsza = kopia_odleglosci[i]
         indeks = odleglosci.index(najmniejsza)
         najblizsze_etykiety.append(y_tren[indeks])
-        # hack poczatkujacego zeby nie wylosowac dwa razy tego samego indeksu
+        # zeby nie wylosowac dwa razy tego samego indeksu
         odleglosci[indeks] = 999999999
 
     # glosowanie wiekszosciowe przy remisie wybieramy etykiete alfabetycznie
@@ -94,7 +94,6 @@ print("k-nn, k=" + str(ka))
 print("dokladnosc: " + str(round(dokladnosc * 100, 2)) + "%")
 print("macierz pomylek:")
 
-# rzutowanie do serii zeby nazwy w crosstab sie zgadzaly
 seria_y = pd.Series(y_test)
 seria_y.name = "actual"
 seria_pred = pd.Series(przewidywania)
