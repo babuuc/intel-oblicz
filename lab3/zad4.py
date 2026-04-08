@@ -72,13 +72,13 @@ for name, clf in classifiers:
     print()
 
 # c) odpowiedzi na pytania
-print("--- odpowiedzi na pytania ---")
-print("accuracy = (tp+tn)/(wszystkie) - ogolna dokladnosc")
-print("precision = tp/(tp+fp) - z tych co przewidzielismy jako chorych, ile faktycznie chorych")
-print("recall = tp/(tp+fn) - z tych co sa faktycznie chorzy, ile znalezlismy")
-print("precision wazna gdy nie chcemy klasyfikowac zdrowych jako chorych")
-print("recall wazna gdy chcemy minimalizowac ryzyko ze chorego powiemy ze zdrowy")
-print()
-print("d) niezbalansowany zbior: accuracy moze byc mylaaca")
-print("np. 900 zdrowych, 100 chorych - klasyfikator zwracajacy zawsze 0 ma 90% accuracy")
-print("ale recall = 0% - nie wykrywa zadnego chorego")
+
+# accuracy = (tp+tn)/(wszystkie) - ogolna dokladnosc
+# precision = tp/(tp+fp) - z tych co przewidzielismy jako chorych ile faktycznie chorych
+# recall = tp/(tp+fn) - z tych co sa faktycznie chorzy ile znalezlismy
+# precision wazna gdy nie chcemy klasyfikowac zdrowych jako chorych
+# recall wazna gdy chcemy minimalizowac ryzyko ze chorego powiemy ze zdrowy
+#
+# d) niezbalansowany zbior: accuracy moze byc mylaaca
+# np 900 zdrowych, 100 chorych - klasyfikator zwracajacy zawsze 0 ma 90% accuracy
+# ale recall = 0% - nie wykrywa zadnego chorego
