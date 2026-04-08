@@ -23,7 +23,7 @@ plt.savefig('wykres3d.png')
 plt.close()
 print("zapisano wykres3d.png")
 
-(train_set, test_set) = train_test_split(df.values, train_size=0.7, random_state=13)
+(train_set, test_set) = train_test_split(df.values, train_size=0.7, random_state=300832)
 
 train_inputs = train_set[:, 0:3].astype(float)
 train_classes = train_set[:, 3].astype(int)

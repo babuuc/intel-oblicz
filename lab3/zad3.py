@@ -7,7 +7,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import confusion_matrix
 
 df = pd.read_csv("iris_big.csv")
-(train_set, test_set) = train_test_split(df.values, train_size=0.7, random_state=13)
+(train_set, test_set) = train_test_split(df.values, train_size=0.7, random_state=300832)
 
 train_inputs = train_set[:, 0:4]
 train_classes = train_set[:, 4]
