@@ -8,7 +8,6 @@ print("a) struktura danych")
 print("wiersze:", len(df))
 print("kolumny:", df.columns.tolist())
 print("oczekiwane wiersze: 1500, zaladowano:", len(df))
-print("brakuje 3 wierszy z bledem (przecinek zamiast kropki jako separator)")
 
 # b) brakujace dane i statystyki
 print("\nb) brakujace dane")
@@ -17,9 +16,6 @@ print(df.isnull().sum())
 # zamieniamy tekst na liczby a bledy staja sie NaN
 num_cols = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
 df[num_cols] = df[num_cols].apply(pd.to_numeric, errors='coerce')
-
-print("\nbrakujace po konwersji 'abc' -> NaN:")
-print(df.isnull().sum())
 
 print("\nstatystyki:")
 print(df[num_cols].describe())
