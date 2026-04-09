@@ -2,17 +2,16 @@ import pandas as pd
 import numpy as np
 
 # a) sprawdzenie struktury plik ma blad w 3 wierszach
-# zamiast "4.75" jest "4,75" co powoduje ze wiersz ma 6 pol zamiast 5
 df = pd.read_csv("iris_big_with_errors.csv", on_bad_lines='skip')
 
-print("=== a) struktura danych ===")
+print("a) struktura danych")
 print("wiersze:", len(df))
 print("kolumny:", df.columns.tolist())
 print("oczekiwane wiersze: 1500, zaladowano:", len(df))
 print("brakuje 3 wierszy z bledem (przecinek zamiast kropki jako separator)")
 
 # b) brakujace dane i statystyki
-print("\n=== b) brakujace dane ===")
+print("\nb) brakujace dane")
 print(df.isnull().sum())
 
 # zamieniamy tekst na liczby a bledy staja sie NaN
@@ -26,7 +25,7 @@ print("\nstatystyki:")
 print(df[num_cols].describe())
 
 # c) dane spoza zakresu (0, 15) zastepujemy mediana kolumny
-print("\n=== c) dane spoza zakresu ===")
+print("\nc) dane spoza zakresu")
 for col in num_cols:
     poza = (df[col] < 0) | (df[col] > 15)
     print(f"{col}: {poza.sum()} bledow - wartosci: {df[col][poza].values}")
@@ -38,7 +37,7 @@ for col in num_cols:
     print(f"  -> zastapiono mediana: {mediana:.2f}")
 
 # d) sprawdzenie gatunkow
-print("\n=== d) gatunki ===")
+print("\nd) gatunki")
 print("znalezione wartosci:", df['target_name'].str.strip().unique())
 
 naprawy = {
@@ -61,7 +60,7 @@ df['target_name'] = df['target_name'].replace(naprawy)
 print("\npo naprawie:", df['target_name'].unique())
 print("brakujace target:", df['target_name'].isnull().sum())
 
-# usuwamy wiersze gdzie nie wiemy jaki gatunek (unknown)
+# usuwamy wiersze gdzie nie wiemy jaki gatunek
 df = df.dropna(subset=['target_name'])
 print("wierszy po usunieciu unknown:", len(df))
 

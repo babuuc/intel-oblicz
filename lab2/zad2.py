@@ -9,22 +9,22 @@ num_cols = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal
 X = df[num_cols].values
 y = df['target_name'].values
 
-# robimy pca na 4 skladowe (tyle ile kolumn)
+# robimy pca na 4 skladowe (tyle co kolumn)
 pca = PCA(n_components=4)
 pca.fit(X)
 
-print("=== wariancja dla kazdej skladowej ===")
+print("wariancja dla kazdej skladowej")
 for i, v in enumerate(pca.explained_variance_ratio_):
     print(f"PC{i+1}: {v:.4f} ({v*100:.2f}%)")
 
-print("\n=== skumulowana wariancja ===")
+print("\nskumulowana wariancja")
 suma = 0
 for i, v in enumerate(pca.explained_variance_ratio_):
     suma += v
     print(f"PC1..PC{i+1}: {suma:.4f} ({suma*100:.2f}%)")
 
 # sprawdzamy ile ostatnich kolumn ma sume < 5%
-print("\n=== ile kolumn usunac ===")
+print("\nile kolumn usunac")
 ratios = pca.explained_variance_ratio_
 strata_1 = ratios[3]  # usuwamy 1 ostatnia
 strata_2 = ratios[2] + ratios[3]  # usuwamy 2 ostatnie
