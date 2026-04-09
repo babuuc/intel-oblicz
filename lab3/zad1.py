@@ -15,7 +15,6 @@ test_classes = test_set[:, 4]
 print("zbior treningowy:", train_set.shape[0], "rekordow")
 print("zbior testowy:", test_set.shape[0], "rekordow")
 
-# klasyfikator recznie oparty na obserwacji zbioru treningowego:
 # setosa ma krotkie platki (petal length < 2)
 # versicolor ma waskie platki (petal width < 1.5)
 # virginica to po prost reszta
