@@ -1,6 +1,6 @@
 # zadanie 1: detekcja obiektow yolo
 # yolov8n nano model trenowany na coco (80 klas)
-# architektura: backbone CSPDarknet + neck FPN + head detekcyjny
+# architektura: backbone CSPDarknet + neck FPN + head detekcyjny i jakies anchor free ze niekotwiczkowany ale nie kumam zbytnio
 # zbior treningowy: coco dataset
 
 import json
