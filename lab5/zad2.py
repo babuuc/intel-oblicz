@@ -52,9 +52,7 @@ def licz_ptaki(sciezka):
 
     # jakis adaptacyjny prog bo lepszy od globalnego bo tlo jest niejednorodne
     # inv bo ptaki ciemne na jasnym tle wiec odwracamy
-    binary = cv2.adaptiveThreshold(gray, 255,
-                                    cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
-                                    cv2.THRESH_BINARY_INV, 11, 5)
+    binary = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV, 11, 5)
 
     # usun pojedyncze piksele szumu
     costam_do_morpha = np.ones((2, 2), np.uint8)
