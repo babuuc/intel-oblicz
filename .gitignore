@@ -21,4 +21,7 @@ __pycache__/
 Thumbs.db
 
 # moje, jakies wyniki itp
-lab5/wyniki1/
+lab5/wyniki1/*
+!lab5/wyniki1/.gitkeep
+lab5/wyniki2/*
+!lab5/wyniki2/.gitkeep
