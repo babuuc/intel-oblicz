@@ -15,7 +15,6 @@ print("model: yolov8n")
 print("liczba klas:", len(model.names))
 print("przykladowe klasy:", [model.names[i] for i in range(10)])
 print("zbior treningowy: coco (80 klas)")
-print("architektura: csp-darknet backbone + pan neck")
 
 # b) c) detekcja na zdjeciu z rozymi progami confidence
 zdjecie = 'office_yolo.png'
