@@ -56,9 +56,9 @@ def licz_ptaki(sciezka):
                                     cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
                                     cv2.THRESH_BINARY_INV, 11, 5)
 
-    # morfologia wiec usun pojedyncze piksele szumu
-    kernel = np.ones((2, 2), np.uint8)
-    binary = cv2.morphologyEx(binary, cv2.MORPH_OPEN, kernel)
+    # usun pojedyncze piksele szumu
+    costam_do_morpha = np.ones((2, 2), np.uint8)
+    binary = cv2.morphologyEx(binary, cv2.MORPH_OPEN, costam_do_morpha)
 
     # znajdz kontury
     contours, _ = cv2.findContours(binary, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
