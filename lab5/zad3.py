@@ -41,5 +41,5 @@ for plik in pliki:
 
     print(f"{plik}: {liczba} ptakow (yolo)")
 
-print("\nuwaga: yolo slabo radzi sobie z miniaturkami 100x100")
-print("opencv z progowaniem adaptacyjnym daje lepsze wyniki na takich danych")
+print("\nyolo slabo radzi sobie z miniaturkami 100x100")
+print("no i opencv z progowaniem adaptacyjnym daje lepsze wyniki na takich danych")
