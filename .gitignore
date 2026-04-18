@@ -25,3 +25,7 @@ lab5/wyniki1/*
 !lab5/wyniki1/.gitkeep
 lab5/wyniki2/*
 !lab5/wyniki2/.gitkeep
+lab7/data_unzipped/*
+!lab7/data_unzipped/.gitkeep
+lab7/outputs/*
+!lab7/outputs/.gitkeep
