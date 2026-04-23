@@ -29,3 +29,5 @@ lab6/zad2/data_unzipped/*
 !lab6/zad2/data_unzipped/.gitkeep
 lab6/zad2/outputs/*
 !lab6/zad2/outputs/.gitkeep
+lab7/wykresy/*
+!lab7/wykresy/.gitkeep
