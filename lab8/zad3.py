@@ -1,4 +1,4 @@
-print("zdecydowalem sie na algorytm aco ktory mozna zastosowac na grafach")
+print("zdecydowalem sie na algorytm aco ktory mozna zastosowac na grafach, poznizej jest przyklad dla 3x3")
 
 # zera oznaczaja sciany a jedynki pola po ktorych mozna chodzic
 labirynt = [
