@@ -57,5 +57,3 @@ wybrano aco
 labirynt jako graf wezly komorki krawedzie ruchy bez scian
 aco na grafie znajduje najkrotsza sciezke
 pso trudniej bo dyskretne rozwiazania
-obejscie zaokraglenie i kara za sciane ale ryzyko lokalnego minimum
-niepowodzenia jakies moze za maly graf
