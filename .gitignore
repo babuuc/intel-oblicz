@@ -32,3 +32,4 @@ lab6/zad2/outputs/*
 lab7/wykresy/*
 !lab7/wykresy/.gitkeep
 lab8/cost_history_endurance.png
+lab8/result.log
