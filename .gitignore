@@ -31,5 +31,7 @@ lab6/zad2/outputs/*
 !lab6/zad2/outputs/.gitkeep
 lab7/wykresy/*
 !lab7/wykresy/.gitkeep
+lab7/data_unzipped/dogs-cats-mini/*
+!lab7/data_unzipped/dogs-cats-mini/.gitkeep
 lab8/cost_history_endurance.png
 lab8/result.log
